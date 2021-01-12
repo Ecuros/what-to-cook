@@ -1,0 +1,34 @@
+.App-header {
+    background-color: #282c34;
+   
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.Navbar-button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    margin: 5px;
+    font-size: 15pt;
+    padding: 3px;
+    align-self: center;
+}
+
+.Navbar-buttons {
+    margin-left: auto;
+}
+
+select {
+    border: none;
+    background-color: white;
+    padding: 3px;
+    margin-left: auto;
+    border-radius: 5px;
+    font-size: 15px;
+}

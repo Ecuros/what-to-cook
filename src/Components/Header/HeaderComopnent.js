@@ -16,8 +16,11 @@ function HeaderComponent (props){
                     )
                 })}
             </select>
-            <button className="Navbar-button">Sign up</button>
-            <button className="Navbar-button">Sign in</button>
+            <div className = "Navbar-buttons">
+                <button className="Navbar-button">Sign up</button>
+                <button className="Navbar-button">Sign in</button>
+            </div>
+            
         </header>
     )
 }

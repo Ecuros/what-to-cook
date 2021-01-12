@@ -13,28 +13,12 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  
-  height: 50px;
-  display: flex;
-  /*flex-direction: column;*/
-  align-items: center;
 
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
 }
-.Navbar-button{
-  background-color:white;
-  border: none;
-  margin: 5px;
-  border-radius: 2px;
-  padding: 3px;
-}
+
 
 @keyframes App-logo-spin {
   from {
