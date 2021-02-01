@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import './Header.css'
+import {Link} from 'react-router-dom';
 
 function HeaderComponent (props){  
     const Items = props.categories;
@@ -7,8 +9,9 @@ function HeaderComponent (props){
     return (
         <header className="App-header">
             <img className ="App-logo" src="logo192.png"/>
-            <h3>What To Cook</h3>
-            <p>This is a header</p>
+            <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/">
+                <h3>What To Cook</h3>
+            </Link>                        
             <select onChange={props.handleChange}>
                 {Items.map((item,index)=>{
                     return (
@@ -17,8 +20,12 @@ function HeaderComponent (props){
                 })}
             </select>
             <div className = "Navbar-buttons">
-                <button className="Navbar-button">Sign up</button>
-                <button className="Navbar-button">Sign in</button>
+                <Link to='/signup'>
+                    <button className="Navbar-button">Sign up</button>
+                </Link>
+                <Link to='/signin'>
+                    <button className="Navbar-button">Sign in</button>
+                </Link>
             </div>
             
         </header>

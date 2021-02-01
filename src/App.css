@@ -1,22 +1,36 @@
-.App {
-  text-align: center;
+.App{
+  display: flex;
+  align-content: stretch;
+  height: 100%;
+  position: absolute;
+  flex-direction: column;
+  justify-content: stretch;
+  width: 100%;
 }
 
+html, body{
+  height: 100%;
+  margin:0;
+  padding:0;
+  background-color: #f7ede2;;
+  
+}
 .App-logo {
   height: 5vmin;
   pointer-events: none;
 }
 
+.App-link {
+  color: #61dafb;
+}
+
+button:focus{
+  outline: none;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-
-
-.App-link {
-  color: #61dafb;
 }
 
 
@@ -28,3 +42,4 @@
     transform: rotate(360deg);
   }
 }
+
