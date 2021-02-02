@@ -4,6 +4,7 @@ import Header from './Components/Header/Header';
 import Orders from './Components/Orders/Orders';
 import SignIn from './Components/SignIn/SignIn';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import SignUp from './Components/SignUp/SignUp';
 
 
 
@@ -13,7 +14,8 @@ function App() {
       <Router> 
       <Header className="header"/>
         <Switch>
-        <Route path="/signin" component={SignIn}/>             
+        <Route path="/signin" component={SignIn}/>
+        <Route path="/signup" component={SignUp}/>             
         <Orders path="/" component={Orders}/>
         </Switch>        
       </Router>

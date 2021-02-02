@@ -9,7 +9,9 @@
     color: white;
     
 }
-
+h3{
+    padding-left: 10px;
+}
 .Navbar-button{
     background-color: transparent;
     border: none;
