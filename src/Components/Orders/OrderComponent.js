@@ -9,6 +9,8 @@ function OrderComponent(props){
             <br/>
             <h3>{props.item.name}</h3>
             {props.item.prepTime}
+            <br/>
+            {props.item.category}
         </div>
     )
 }

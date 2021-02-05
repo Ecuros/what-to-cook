@@ -4,18 +4,23 @@ import './Header.css'
 
 class Header extends React.Component {
 
-    constructor(){
+    constructor(props){
         super();
         this.state={
-            categories: [{name:"Asian"}, {name:"French"}]
+            category: props.category,
+            categories: props.categories         
         }
+        this.handleChange = this.handleChange.bind(this)
     }
     componentDidMount(){
         //fetch categories from API
         console.log("fetching data");
+        
     }
     handleChange(event){
-        console.log("selection changed to " + event.target.value);
+        this.props.handleChange(event.target.value);
+        //console.log("selection changed to " + event.target.value);
+        //console.log(this.props.categories)
     }
 
     render(){
